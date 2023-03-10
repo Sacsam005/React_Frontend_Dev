@@ -1,0 +1,84 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  object-fit: contain;
+}
+
+.hero-container-content {
+  width: auto;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+}
+
+.hero-container-content>h1.my-5 {
+  color: #111;
+  font-size: 9rem;
+  font-weight: 700;
+  margin-top: 9rem;
+  text-align: center;
+  object-fit: contain;
+}
+
+.hero-container-content>p {
+  color: #333;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.hero-btns {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.hero-btns .btn {
+  margin: 1rem;
+}
+
+.btn-outline:hover {
+  background-color: yellowgreen;
+}
+
+.fa-typo3 {
+  margin-left: 4px;
+}
+
+@media (max-width: 1024px) {
+  .hero-container>h1.my-5 {
+    font-size: 7rem;
+    margin-top: 9rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-container {
+    width: 100%;
+    height: auto;
+    margin-top: 12rem;
+  }
+
+  .hero-container-content>h1.my-5 {
+    font-size: 5rem;
+    margin-top: 9rem !important;
+  }
+
+  .hero-container-content>p {
+    font-size: 2.5rem;
+    /* margin-top: 9rem; */
+  }
+}
