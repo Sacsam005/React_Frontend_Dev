@@ -1,0 +1,40 @@
+.sidenav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13%;
+  background-color: #333;
+  height: 100%;
+}
+
+.sidenav ul li {
+  list-style: none;
+}
+
+.sidenav ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 2;
+}
+
+.nav-list.active {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  height: 90vh;
+  position: absolute;
+  top: 50px;
+  left: -100%;
+  background-color: #333;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
