@@ -1,0 +1,134 @@
+.billboard {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  width: 100%;
+  height: 56.25vw;
+}
+
+.mainImg {
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.fadeOut {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0) 0,
+    rgba(20, 20, 20, 0.15) 15%,
+    rgba(20, 20, 20, 0.35) 29%,
+    rgba(20, 20, 20, 0.58) 44%,
+    #141414 68%,
+    #141414 100%
+  );
+  position: absolute;
+  background-size: 100% 100%;
+  background-position: 0 top;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  width: 100%;
+  height: 14.7vw;
+  top: auto;
+  bottom: -1px;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  bottom: 35%;
+  left: 4%;
+  width: 35%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.info img {
+  width: 60%;
+}
+
+.links {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.links a,
+.links button {
+  border-radius: 4px;
+  border: none;
+  padding: 0.2rem 1.2rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.description {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.links button {
+  color: white;
+  background-color: rgba(109, 109, 110, 0.7);
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.links a span,
+.links button span {
+  margin-left: 1rem;
+}
+
+@media (max-width: 680px) {
+  .billboard {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    position: absolute;
+    margin-top: 16rem;
+    width: 60%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .description {
+    font-size: 0.6rem;
+  }
+
+  .info img {
+    position: relative;
+    width: 40%;
+    top: 1rem;
+    left: 3.5rem;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 0.7rem;
+  }
+
+  .links button {
+    color: white;
+    background-color: rgba(109, 109, 110, 0.7);
+    cursor: pointer;
+    font-size: 0.65rem;
+    width: 58%;
+  }
+}

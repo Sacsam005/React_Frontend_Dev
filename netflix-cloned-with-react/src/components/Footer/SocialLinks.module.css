@@ -1,0 +1,12 @@
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.iconLink {
+  margin-right: 1rem;
+}
+
+.iconLink svg {
+  color: white;
+}

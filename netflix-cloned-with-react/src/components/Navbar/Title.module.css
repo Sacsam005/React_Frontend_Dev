@@ -1,0 +1,17 @@
+.titles {
+  background-color: black;
+  margin-bottom: 70px;
+  margin-left: 35px;
+  margin-top: -150px;
+  color: white;
+}
+
+@media (max-width: 680px) {
+  .titles {
+    background-color: black;
+    margin-bottom: 70px;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: white;
+  }
+}

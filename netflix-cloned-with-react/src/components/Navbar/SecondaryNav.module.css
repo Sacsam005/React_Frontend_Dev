@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.navItem {
+  margin-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 680px) {
+  .navItem {
+    margin-left: 0.5rem 0 0 0.8rem;
+    padding-right: 0;
+  }
+}

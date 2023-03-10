@@ -1,0 +1,31 @@
+.linkList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  flex-basis: 25%;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.link a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.link a:hover {
+  border-bottom: 1px solid grey;
+}
+
+@media (max-width: 680px) {
+  .linkList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
